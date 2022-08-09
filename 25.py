@@ -1,5 +1,6 @@
 fromages = ['cheddar', 'Edam', 'Gouda']
 numbers = [17, 123]
+numbers1 = [1, 0]
 empty = []
 print(fromages, numbers, empty)
 fromages[0] = 'Brie'
@@ -12,4 +13,12 @@ c = len(fromages)
 for i in range(len(numbers)):
     numbers[i] = numbers[i] * 2
 print(numbers)
-print(fromages[1:2])
+print(fromages[:])
+d = numbers.reverse()
+print(numbers)
+e = numbers.extend(numbers1)
+print(numbers)
+f = numbers.sort()
+print(numbers)
+g = numbers.pop(1)
+print(numbers)
