@@ -1,11 +1,16 @@
 count = 0
 total = 0
-
 a = input('Enter a file name: ')
-if a == 'na na boo boo':
-    print("NA NA BOO BOO TO YOU - You have been punk'd!")
+
+try:
+    if a == 'na na boo boo':
+        print("NA NA BOO BOO TO YOU - You have been punk'd!")
+        exit()
+    b = open(a)
+except FileNotFoundError:
+    print('file not found:', a)
     exit()
-b = open(a)
+
 for line in b:
     # line = line.rstrip()
     if line.startswith('X-DSPAM-Confidence: '):
