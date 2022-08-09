@@ -8,7 +8,9 @@
 
 count = 0
 total = 0
-b = open('mbox-short.txt')
+
+
+                        b = open('mbox-short.txt')
 for line in b:
     # line = line.rstrip()
     if line.startswith('X-DSPAM-Confidence: '):
