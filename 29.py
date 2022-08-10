@@ -10,6 +10,6 @@
 a = open('mbox.txt')
 for line in a:
     line = line.rstrip()
-    if not line.startswith('From '): continue
+    if not line.startswith('Return-Path'): continue
     words = line.split()
-    print(words[2])
+    print(words[1])
