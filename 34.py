@@ -1,11 +1,15 @@
-a = open('mbox-short')
-b = a.read()
-# print(b)
-for word in a:
-    word = word.rstrip()
-    if word.find('From') == -1:
-        continue
-    print(word)
+fhand = open('mbox-short')
+
+counts = dict()
+
+for line in fhand:
+    words = line.strip()
+    for word in words:
+        if word not in counts:
+            counts[word] = 1
+        else:
+            counts[word] += 1
+print(counts)
 
 # fhand = open('mbox-short')
 # for line in fhand:

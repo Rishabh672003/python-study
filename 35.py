@@ -1,6 +1,6 @@
 import string
 
-a = open('romeo')
+a = open('mbox')
 b = dict()
 for line in a:
     line = line.rstrip()
@@ -13,4 +13,3 @@ for line in a:
             b[word] += 1
 
 print(b)
-string.punctuation
