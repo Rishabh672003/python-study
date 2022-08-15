@@ -53,7 +53,7 @@ try:
             print('Roots are', x1, x2, 'and', x3)
         elif h > 0:
             r = (-g / 2) + math.pow(h, 0.5)
-            s = math.pow(r, 1 / 3)
+            s = math.pow(abs(r), 1 / 3)
             t = (-g / 2) - math.pow(h, 0.5)
             if t > 0:
                 u = math.pow(t, float(1) / 3)
@@ -66,9 +66,11 @@ try:
             x51 = -((s + u) / 2) - (b / (3 * a))
             x52 = ((s - u) * math.sqrt(3)) / 2
             print('Only one root is real. ')
-            print('roots are', x4, ',', x51, '+ i*', x52, 'and', x51, '- i*', x52)
+            print(
+                'roots are', x4, ',', x51, '+ i*', x52, 'and', x51, '- i*', x52
+            )
         elif f == 0 and g == 0 and h == 0:
             x6 = math.pow(d / a, 1 / 3) * (-1)
             print('All roots are', x6)
 except:
-    print("write a float number")
+    print('please enter a valid number')
