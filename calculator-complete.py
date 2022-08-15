@@ -9,9 +9,9 @@ try:
     alpha = input(
         print(
             """what do you want to do -
-                        a2 = simple mathematic
-                        b2 = solve equation
-                        c2 = trigonometric"""
+                        a = simple mathematic
+                        b = solve equation
+                        c = trigonometric"""
         )
     )
     if alpha == 'a':
