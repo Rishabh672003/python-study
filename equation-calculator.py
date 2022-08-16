@@ -10,26 +10,27 @@ try:
     b = float(input('b = '))
     c = float(input('c = '))
     d = float(input('d = '))
+    discriminant = math.pow(c, 2) - 4 * b * d
     if a == 0:
         if b == 0:
-            print('roots is ', -d / c)
+            theta = -d / c
+            print('roots is ', theta)
         else:
-            if math.pow(c, 2) - 4 * b * d > 0:
+            if discriminant > 0:
                 print('Roots are Real and Unequal')
-                print(
-                    'Roots are',
-                    (-c + math.sqrt(c**2 - 4 * b * d)) / (2 * b),
-                    'and',
-                    (-c - math.sqrt(c**2 - 4 * b * d)) / (2 * b),
-                )
-            elif math.pow(c, 2) - 4 * b * d < 0:
+                zeta = round((-c + math.sqrt(discriminant)) / (2 * b), 4)
+                gamma = round((-c - math.sqrt(discriminant)) / (2 * b), 4)
+                print('Roots are', zeta, 'and', gamma)
+            elif discriminant < 0:
+                eta = round(abs(discriminant), 4)
+                iota = round(-c / 2 * b, 4)
+                delta = round(math.sqrt(eta) / 2 * b, 4)
                 print('Roots are Complex and Imaginary ')
-            elif math.pow(c, 2) - 4 * b * d == 0:
+                print('Root are', iota,'+', 'i *', delta, 'and', iota, '-', 'i *', delta )
+            elif discriminant == 0:
                 print('Roots are Real and Equal')
-                print(
-                    'both Roots are ',
-                    (-c - math.sqrt(c**2 - 4 * b * d)) / (2 * b),
-                )
+                epsilon = -c / 4 * b
+                print('both Roots are ', epsilon)
     else:
         f = ((3 * c) / a - ((math.pow(b, 2)) / math.pow(a, 2))) / 3
         g = (
@@ -62,15 +63,15 @@ try:
             elif t == 0:
                 u = 0
             i1 = 'i'
-            x4 = (s + u) - (b / (3 * a))
-            x51 = -((s + u) / 2) - (b / (3 * a))
-            x52 = ((s - u) * math.sqrt(3)) / 2
+            x4 = round((s + u) - (b / (3 * a)), 4)
+            x51 = round(-((s + u) / 2) - (b / (3 * a)), 4)
+            x52 = round(((s - u) * math.sqrt(3)) / 2, 4)
             print('Only one root is real. ')
             print(
                 'roots are', x4, ',', x51, '+ i*', x52, 'and', x51, '- i*', x52
             )
         elif f == 0 and g == 0 and h == 0:
-            x6 = math.pow(d / a, 1 / 3) * (-1)
+            x6 = round(math.pow(d / a, 1 / 3) * (-1), 4)
             print('All roots are', x6)
 except:
     print('please enter a valid number')
