@@ -73,7 +73,6 @@ try:
                 u = abs(-math.pow(abs(t), float(1) / 3))
             elif t == 0:
                 u = 0
-            i1 = 'i'
             x4 = round((s + u) - (b / (3 * a)), 4)
             x51 = round(-((s + u) / 2) - (b / (3 * a)), 4)
             x52 = round(((s - u) * math.sqrt(3)) / 2, 4)
