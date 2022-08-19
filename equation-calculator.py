@@ -23,9 +23,8 @@ try:
                 gamma = round((-c - math.sqrt(discriminant)) / (beta), 4)
                 print('Roots are', zeta, 'and', gamma)
             elif discriminant < 0:
-                eta = round(abs(discriminant), 4)
                 iota = round(-c / (beta), 4)
-                delta = round(math.sqrt(eta) / (beta), 4)
+                delta = round(math.sqrt(abs(discriminant)) / (beta), 4)
                 print('Roots are Complex and Imaginary ')
                 print(
                     'Root are',
