@@ -40,7 +40,7 @@ try:
                 )
             elif discriminant == 0:
                 print('Roots are Real and Equal')
-                epsilon = -c / 2 * beta
+                epsilon = -c / (2 * beta)
                 print('both Roots are ', epsilon)
     else:
         f = ((3 * c) / a - ((math.pow(b, 2)) / math.pow(a, 2))) / 3
@@ -58,9 +58,9 @@ try:
             m = math.cos(k / 3)
             n = math.sqrt(3) * math.sin(k / 3)
             p = (b / (3 * a)) * (-1)
-            x1 = (2 * j * math.cos(k / 3)) - (b / (3 * a))
-            x2 = (z * (m + n)) + p
-            x3 = (z * (m - n)) + p
+            x1 = round((2 * j * math.cos(k / 3)) - (b / (3 * a)), 4)
+            x2 = round((z * (m + n)) + p, 4)
+            x3 = round((z * (m - n)) + p, 4)
             print('All roots are real.')
             print('Roots are', x1, x2, 'and', x3)
         elif h > 0:
