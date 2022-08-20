@@ -3,7 +3,7 @@ import math
 print(
     'THis is a program to solve a equation in the form ax^3 + bx^2 + cx + d = 0'
 )
-print('Write the coefficients below i.e a,b,c and d.')
+print('Write the coefficients below i.e a, b, c and d.')
 
 try:
     a = float(input('a = '))
