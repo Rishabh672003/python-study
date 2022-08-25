@@ -68,9 +68,9 @@ try:
             s = math.pow(abs(r), 1 / 3)
             t = (-g / 2) - math.pow(h, 0.5)
             if t > 0:
-                u = abs(math.pow(t, float(1) / 3))
+                u = math.pow(t, float(1) / 3)
             elif t < 0:
-                u = abs(-math.pow(abs(t), float(1) / 3))
+                u = -math.pow(abs(t), float(1) / 3)
             elif t == 0:
                 u = 0
             x4 = round((s + u) - (b / (3 * a)), 4)
