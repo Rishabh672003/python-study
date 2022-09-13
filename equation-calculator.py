@@ -78,7 +78,7 @@ try:
             x52 = round(((s - u) * math.sqrt(3)) / 2, 4)
             print('Only one root is real. ')
             print(
-                'roots are',
+                'roots are -',
                 x4,
                 ',',
                 x51,
