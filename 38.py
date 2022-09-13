@@ -18,9 +18,11 @@ def the(a: str) -> None:
     print('from' + a)
 
 
-a = [1, 2, 3, 4]
+a = [1, 2, 5, 4]
 print((a)[0])
 print(id(a))
+b = sorted(a)
+print(b)
 
 c = 4
 if c >= 3:
