@@ -31,4 +31,22 @@
 # sum(101, 102, 103.5)
 # sum(True, False, True)
 
-def
+# def postive_int(a):
+#     if a >= 0:
+#         print("True")
+#         return True
+#     else:
+#         return False
+#
+# postive_int(10)
+
+# def nothing():
+#      print("None")
+# nothing()
+
+a = [200, 100, 600, 400]
+print(type(a))
+b = sorted(a)
+print(b)
+c = b[::-1]
+print(c)
