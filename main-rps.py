@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 
 def to_string(hand: str) -> str:
@@ -24,7 +24,7 @@ else:
     user_hand = ''
 
 computer_hand: str
-r: int = random.randint(0, 2)
+r: int = randint(0, 2)
 if r == 0:
     computer_hand = 'r'
 elif r == 1:
@@ -33,7 +33,10 @@ else:
     computer_hand = 's'
 
 print(
-    'You: ' + to_string(user_hand) + ' -- Computer: ' + to_string(computer_hand)
+    'You: '
+    + to_string(user_hand)
+    + ' -- Computer: '
+    + to_string(computer_hand)
 )
 
 if user_hand == computer_hand:
