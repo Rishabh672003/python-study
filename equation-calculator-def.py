@@ -106,5 +106,5 @@ try:
     d = float(input('d = '))
     alpha = eq(a, b, c, d)
 except:
-    print("math is done through numbers not words or letter you dumb shit")
+    print("math is done through numbers not alphabets you dumb shit")
 

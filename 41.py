@@ -1,5 +1,4 @@
-def dell():
-    a = "lll"
-    return a
+a: int
+b: int
+c: int
 
-dell()
