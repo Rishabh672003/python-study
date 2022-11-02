@@ -1,4 +1,2 @@
-a: int
-b: int
-c: int
-
+x = lambda a: a + 10
+print(x(5))

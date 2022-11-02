@@ -1,4 +1,5 @@
 import math
+from typing_extensions import IntVar
 
 
 try:
@@ -13,7 +14,7 @@ try:
     if alpha == 'a':
         beta = input(
             print(
-                """what do you want to do- 
+                """what do you want to do-
                      1.add
                      2.subtract
                      3.multiply
@@ -21,6 +22,11 @@ try:
                      5.logarithm"""
             )
         )
+        if beta == 1:
+            print("give your numbers to add")
+            while True:
+                a = int(input("enter your numbers"))
+                b = sum(a)
 
     elif alpha == 'b':
         print(
