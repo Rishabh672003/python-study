@@ -26,7 +26,7 @@ try:
             print("give your numbers to add")
             while True:
                 a = int(input("enter your numbers"))
-                b = sum(a)
+                # b = sum(a)
 
     elif alpha == 'b':
         print(
